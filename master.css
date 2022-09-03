@@ -1,0 +1,129 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.box {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+.box figure, .box #tools {
+  width: 20%;
+  height: 100vh;
+  background-color: #e6ebe9;
+}
+.box figure {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box figure img {
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px brown groove;
+}
+.box #paper {
+  width: 60%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+.box #tools {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.my-rec {
+  display: flex;
+  width: 150px;
+  height: 75px;
+  border: 5px solid black;
+  border-radius: 5px;
+  text-align: center;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.cut, .rotate-el {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(240, 248, 255, 0.7607843137);
+  position: absolute;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6549019608);
+}
+
+.child-pos {
+  position: absolute;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3176470588);
+  width: 400px;
+  height: 200px;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(-50%, 0);
+  transition: 1s;
+}
+.popup > * {
+  line-height: 1.5;
+}
+.popup button {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}/*# sourceMappingURL=master.css.map */
