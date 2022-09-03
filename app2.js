@@ -10,9 +10,9 @@ function rand() {
 gallery.setAttribute('src',imgs[_rand])
 const paper = document.getElementById("paper")
 // disapbled the window contextmenu
-// window.addEventListener("contextmenu",(e)=>{
-// e.preventDefault()
-// })
+window.addEventListener("contextmenu",(e)=>{
+e.preventDefault()
+})
 let posx = 0
 let posy=0
 let flag
